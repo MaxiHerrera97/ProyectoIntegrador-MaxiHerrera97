@@ -1,21 +1,13 @@
+import Button from "../button/button";
 import SearchBar from "../searchbar/SearchBar";
 import { Link } from "react-router-dom";
 
 const Nav = ({onSearch})=>{
     return (
         <nav>
-            <Link to='/about'>
-                <button>
-                About
-               </button>
-            </Link>
-            
-                <Link to='/home'>
-                    <button>
-                    Home
-                    </button>
-                </Link>
-            
+            <Button link='/home' text='Home'/>
+            <Button link='/about' text='About'/>
+            <Button link='/favorites' text='Favorites'/>
             <SearchBar onSearch={onSearch}/>
         </nav>
     )

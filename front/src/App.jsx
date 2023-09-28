@@ -1,12 +1,22 @@
+/* Style */
 import './App.css'
-import Cards from './components/cards/Cards';
+
+/* Components to render */ 
 import Nav from './components/nav/Nav';
-import { useState, useEffect } from 'react';
-import axios from 'axios';
-import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
+import Form from './components/form/Form';
+import Cards from './components/cards/Cards';
 import About from './components/about/About';
 import Detail from './components/detail/Detail';
-import Form from './components/form/Form';
+import Favorites from './components/favorites/Favorites';
+
+/* Hooks */
+import { useState, useEffect } from 'react';
+import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
+
+/* Dependencies */
+import axios from 'axios';
+
+
 
 
 const EMAIL = 'hola@gmail.com';
@@ -54,6 +64,7 @@ const App=()=> {
          {pathname !== '/' && <Nav onSearch={onSearch}/>}
 
          <Routes>
+            <Route path='/favorites' element={<Favorites/>}/>
             <Route path='/home' element={<Cards characters={characters} onClose={onClose}/>}/>
             <Route path='/about' element={<About/>}/>
             <Route path='/detail/:id' element={<Detail/>}/>
