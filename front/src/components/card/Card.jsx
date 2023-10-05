@@ -33,9 +33,9 @@ const Card =({ id, name, image, onClose, gender}) => {
       <div>
          {
            isFav ? (
-         <button onClick={handleFavorite}>❤️</button>
+         <button onClick={handleFavorite}>💗</button>
            ) : (
-         <button onClick={handleFavorite}>🤍</button>
+         <button onClick={handleFavorite}>x</button>
           )
         }
 
