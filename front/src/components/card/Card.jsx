@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
-import {useDispatch, useSelector} from "react-redux";
+import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+import {useDispatch, useSelector} from "react-redux";
 import { addFav, removeFav } from "../../redux/actions/actions";
-import { useLocation } from "react-router-dom";
+
 
 
 const Card =({ id, name, image, onClose, gender}) => {
@@ -35,7 +35,7 @@ const Card =({ id, name, image, onClose, gender}) => {
            isFav ? (
          <button onClick={handleFavorite}>💗</button>
            ) : (
-         <button onClick={handleFavorite}>x</button>
+         <button onClick={handleFavorite}>💛</button>
           )
         }
 

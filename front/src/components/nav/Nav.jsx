@@ -1,4 +1,4 @@
-import Button from "../button/button";
+import Button from "../button/Button";
 import SearchBar from "../searchbar/SearchBar";
 import { Link } from "react-router-dom";
 

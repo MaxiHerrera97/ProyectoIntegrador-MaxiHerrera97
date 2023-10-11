@@ -5,12 +5,12 @@ const Cards = ({characters, onClose})=> {
    <div>
     {characters.map(({id, name, image, gender}) => {
         return <Card
-        key ={id}
-        id={id}
-        name = {name}
-        image = {image}
-        onClose={onClose}
-        gender={gender}
+        key= {id}
+        id= {id}
+        name= {name}
+        image= {image}
+        onClose= {onClose}
+        gender= {gender}
         />
     })}
 
