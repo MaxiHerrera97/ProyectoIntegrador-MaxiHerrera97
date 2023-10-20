@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import {useDispatch, useSelector} from "react-redux";
 import { addFav, removeFav } from "../../redux/actions/actions";
-
+import styles from "./Card.module.css";
 
 
 const Card =({ id, name, image, onClose, gender}) => {
@@ -30,26 +30,26 @@ const Card =({ id, name, image, onClose, gender}) => {
    }, [myFavorites]);
 
    return (
-      <div>
+      <div className={styles.card}>
          {
            isFav ? (
-         <button onClick={handleFavorite}>💗</button>
+         <button onClick={handleFavorite} className={styles.cardButton}>💗</button>
            ) : (
-         <button onClick={handleFavorite}>💛</button>
+         <button onClick={handleFavorite} className={styles.cardButton}>💛</button>
           )
         }
 
         {
          pathname !== '/favorites' 
-         ? <button onClick={() => onClose(id)}>X</button>
+         ? <button onClick={() => onClose(id)} className={styles.cardButton}>❌</button>
          : ''
         }
 
-         <Link to={`/detail/${id}`}>
-         <h2>{name}</h2>
+         <Link to={`/detail/${id}`} >
+         <h2 className={styles.cardTitle}>{name}</h2>
          </Link>
-         <p>{gender}</p>
-         <img src={image} alt={name} /> 
+         <p className={styles.cardDescription}>{gender}</p>
+         <img src={image} alt={name} className={styles.cardImage}/> 
       </div>
    );
 }

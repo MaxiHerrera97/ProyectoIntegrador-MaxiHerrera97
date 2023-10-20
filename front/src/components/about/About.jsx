@@ -1,6 +1,9 @@
+import React from "react";
+
+
 const About = () =>{
     return (
-        <div>
+        <div >
          <h1>THIS IS ANTHONY MAXIMILIANO</h1>
         </div>
     )

@@ -1,0 +1,18 @@
+
+/* Estilo del botón "Agregar" */
+.addButton {
+    background-color: #14ffec;
+    color: #0a0813;
+    border: auto;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* Cambiar el color del texto de error */
+  .error {
+    color: #ff314e;
+    font-size: 14px;
+  }
+  

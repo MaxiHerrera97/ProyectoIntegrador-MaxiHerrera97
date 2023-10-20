@@ -1,0 +1,61 @@
+
+/*Estilo de fondo*/
+.background {
+    background-image: url('../img/gif3.gif'); 
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-repeat: space;
+  }
+  
+  /* Contenedor del formulario para hacerlo responsive */
+  .form {
+    background-color: rgba(67, 56, 56, 0.8); /* Fondo semi-transparente */
+    padding: 20px;
+    border: 2px solid #14ffec;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px; /* Ancho máximo del formulario */
+  }
+  
+  /* Estilo de campos de entrada */
+  .input {
+    background-color: #040404ea;
+    color: #14ffec;
+    border: 1px solid #14ffec;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 5px 0;
+    width: 100%;
+  }
+  
+  /* Estilo de la línea horizontal */
+  .hr {
+    border-color: #14ffec;
+  }
+  
+  /* Estilo del botón */
+  .button {
+    background-color: #14ffec;
+    color: #0a0813;
+    border: auto;
+    border-radius: 33px;
+    padding: 10px 13px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+  }
+  
+  /* Cambiar el color del texto de error */
+  .error {
+    color: #ff314e;
+    font-size: 14px;
+  }
+  
+  
+  

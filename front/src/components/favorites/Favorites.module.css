@@ -1,0 +1,23 @@
+/* Estilos para los elementos select */
+.selectContainer {
+    margin-bottom: 20px; /* Espacio entre los selects y los cards */
+  }
+  
+  .select {
+    background-color: #14ffec; /* Color de fondo */
+    color: #000000; /* Texto en blanco */
+    border: auto;
+    border-radius: 21px;
+    padding: 7px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Estilos para las opciones dentro de los selects */
+  .selectOption {
+    background-color: #14ffec; /* Color de fondo de las opciones */
+    color: #fff; /* Texto en blanco de las opciones */
+    font-size: 16px;
+  }
+  

@@ -1,5 +1,5 @@
 /* Style */
-import './App.css'
+import style from "./App.module.css"
 
 /* Components to render */ 
 import Nav from './components/nav/Nav';
@@ -67,7 +67,7 @@ const App=()=> {
 }, [access]);
 
   return (
-    <div className='App'>
+    <div className={style.root}>
 
          {pathname !== '/' && <Nav onSearch={onSearch}/>}
 

@@ -1,0 +1,10 @@
+.root {
+  max-width: 2080px 1291px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  background-image: url(../img/gif.gif);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh
+}
